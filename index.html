@@ -46,18 +46,33 @@
                 All Trees
               </button>
 
-              <div id="dynamicButtons" class="">
-                <h1>hi im h1</h1>
+              <div
+                id="catagorysLoadingSpinner"
+                class="hidden w-full h-full justify-center items-center"
+              >
+                <span class="loading loading-spinner loading-xl"></span>
               </div>
+
+              <div id="dynamicButtons" class=""></div>
             </div>
           </div>
 
           <!-- Second column (span 3): Tree Cards -->
           <div class="col-span-1 lg:col-span-3">
+            <!-- loading spinner -->
+            <div
+              id="treeLoadingSpinner"
+              class="hidden w-full h-full justify-center items-center"
+            >
+              <span class="loading loading-spinner loading-xl"></span>
+            </div>
+
             <!-- Card in 3 col manner -->
-            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-              <!-- Card 1 -->
-              <div
+            <div
+              id="dynamicTrees"
+              class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"
+            >
+              <!-- <div
                 class="card bg-base-100 shadow-xl border border-success/20 overflow-hidden hover:shadow-success/30 transition-shadow"
               >
                 <figure class="h-48 overflow-hidden">
@@ -69,7 +84,7 @@
                 </figure>
                 <div class="card-body p-5">
                   <h2 class="card-title text-success">Evergreen Beauty</h2>
-                  <p class="text-sm text-base-content/70">
+                  <p class="text-sm length-clamp-2 text-base-content/70">
                     A beautiful indoor tree that stays green all year round.
                   </p>
 
@@ -89,79 +104,7 @@
                     </button>
                   </div>
                 </div>
-              </div>
-
-              <!-- Card 2 -->
-              <div
-                class="card bg-base-100 shadow-xl border border-success/20 overflow-hidden hover:shadow-success/30 transition-shadow"
-              >
-                <figure class="h-48 overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=600&auto=format&fit=crop"
-                    alt="Tree"
-                    class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-                  />
-                </figure>
-                <div class="card-body p-5">
-                  <h2 class="card-title text-success">Tropical Palm</h2>
-                  <p class="text-sm text-base-content/70">
-                    Bring tropical vibes to your home with this easy care palm.
-                  </p>
-
-                  <div class="flex justify-between items-end mt-4">
-                    <span class="text-success font-semibold">Areca Palm</span>
-                    <span
-                      class="text-lg font-bold text-success-content bg-success/20 px-2 py-1 rounded"
-                      >$3500</span
-                    >
-                  </div>
-
-                  <div class="card-actions justify-end mt-4">
-                    <button
-                      class="btn btn-success text-white w-full hover:scale-[1.02] transition-transform"
-                    >
-                      Add to Cart
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 3 -->
-              <div
-                class="card bg-base-100 shadow-xl border border-success/20 overflow-hidden hover:shadow-success/30 transition-shadow"
-              >
-                <figure class="h-48 overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1545241047-6083a36a1c1c?q=80&w=600&auto=format&fit=crop"
-                    alt="Tree"
-                    class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-                  />
-                </figure>
-                <div class="card-body p-5">
-                  <h2 class="card-title text-success">Bonsai Classic</h2>
-                  <p class="text-sm text-base-content/70">
-                    Meticulously maintained bonsai tree providing zen.
-                  </p>
-
-                  <div class="flex justify-between items-end mt-4">
-                    <span class="text-success font-semibold"
-                      >Juniper Bonsai</span
-                    >
-                    <span
-                      class="text-lg font-bold text-success-content bg-success/20 px-2 py-1 rounded"
-                      >$8500</span
-                    >
-                  </div>
-
-                  <div class="card-actions justify-end mt-4">
-                    <button
-                      class="btn btn-success text-white w-full hover:scale-[1.02] transition-transform"
-                    >
-                      Add to Cart
-                    </button>
-                  </div>
-                </div>
-              </div>
+              </div> -->
             </div>
           </div>
 
